@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bienvenida"
+            android:icon="@drawable/baseline_local_parking_24"
+            android:title="Reservas" />
+        <item
+            android:id="@+id/fragment_Historial"
+            android:icon="@drawable/baseline_history_24"
+            android:title="Historial" />
+
+        <item
+            android:id="@+id/fragment_Cambio_De_Contrasena"
+            android:icon="@drawable/baseline_lock_24"
+            android:title="Cambiar contraseña" />
+        <item
+            android:id="@+id/nav_exit"
+            android:onClick="onNavigationItemSelected"
+            android:icon="@drawable/baseline_exit_to_app_24"
+            android:title="Cerrar sesión" />
+
+
+    </group>
+</menu>

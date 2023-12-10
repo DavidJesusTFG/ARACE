@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/bienvenida">
+    <fragment
+        android:id="@+id/fragment_Reservas"
+        android:name="com.example.arace.menu.reservas.Fragment_Reservas"
+        android:label="fragment__reservas"
+        tools:layout="@layout/fragment__reservas" />
+    <fragment
+        android:id="@+id/fragment_Historial"
+        android:name="com.example.arace.menu.historial.Fragment_Historial"
+        android:label="fragment__historial"
+        tools:layout="@layout/fragment__historial" />
+    <fragment
+        android:id="@+id/fragment_Cambio_De_Contrasena"
+        android:name="com.example.arace.menu.Fragment_Cambio_De_Contrasena"
+        android:label="fragment__cambio__de__contrasena"
+        tools:layout="@layout/fragment__cambio__de__contrasena" />
+    <fragment
+        android:id="@+id/bienvenida"
+        android:name="com.example.arace.Bienvenida"
+        android:label="fragment_bienvenida"
+        tools:layout="@layout/fragment_bienvenida" />
+</navigation>

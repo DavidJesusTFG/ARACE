@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ARACE"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".menu.reservas.Reserva_Realizada"
+            android:exported="false" />
+        <activity
+            android:name=".menu.reservas.Calendario"
+            android:exported="false" />
+        <activity
+            android:name=".menu.reservas.plazas.Plazas"
+            android:exported="false" />
+        <activity android:name=".menu.reservas.zonas.Zonas"
+            android:exported="false" />
+
+        <activity
+            android:name=".menu.Menu_Principal"
+            android:exported="false"
+            android:label="@string/title_activity_menu_alumno"
+            android:theme="@style/Theme.ARACE.NoActionBar" />
+        <activity
+            android:name=".profesor.Cambio_Contrasena_Profesor"
+            android:exported="false" />
+        <activity
+            android:name=".alumno.Cambio_Contrasena_Alumno"
+            android:exported="false" />
+        <activity
+            android:name=".alumno.Cod_Secreto_Alumno"
+            android:exported="false" />
+        <activity
+            android:name=".profesor.Cod_Secreto_Profesor"
+            android:exported="false" />
+        <activity
+            android:name=".profesor.Inicio_Sesion_Profesor"
+            android:exported="false" />
+        <activity
+            android:name=".alumno.Inicio_Sesion_Alumno"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
