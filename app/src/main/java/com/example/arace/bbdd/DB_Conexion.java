@@ -122,7 +122,9 @@ public class DB_Conexion extends SQLiteOpenHelper {
         // Insertar datos en la tabla Usuarios
        String sqlUsuarios="INSERT OR REPLACE INTO Usuarios (Id_Usuario, Usuario, Contraseña, CodigoSecreto, Tipo_usuario) VALUES (1, 'jose.sala', '1234', 111, 'Profesor'),\n" +
                "(2, 'david.ortiz', '1234', 222, 'Alumno'),\n" +
-               "(3, 'jesus.pedroza', '1234', 333, 'Alumno');";
+               "(3, 'jesus.pedroza', '1234', 333, 'Alumno')," +
+               "(4, 'laura.sanchez', '1234', 444, 'Profesor')," +
+               "(5, 'agustin.gonzalez', '1234', 555, 'Profesor');";
        db.execSQL(sqlUsuarios);
         // Insertar datos en la tabla Plaza
         String[] sqlPlaza = {
@@ -136,14 +138,66 @@ public class DB_Conexion extends SQLiteOpenHelper {
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-4', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-5', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-7', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (1, 'E-10', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-2', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-3', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-4', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-5', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-7', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (2, 'C-10', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-1', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-2', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-3', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-4', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-5', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (3, 'B-10', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-4', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-5', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-7', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (6, 'A-10', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-1', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-2', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-3', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-4', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-5', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-7', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (4, 'P-10', 'Si');",
                 "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-1', 'Si');",
-                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-1', 'Si');"
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-2', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-3', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-4', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-5', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-7', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (5, 'J-10', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-1', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-2', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-3', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-4', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-5', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-6', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-7', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-8', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-9', 'Si');",
+                "INSERT INTO Plaza (Id_Zona, Lugar, Disponibilidad) VALUES (7, 'RE-10', 'Si');"
         };
 
         for (String sql : sqlPlaza) {
@@ -160,10 +214,10 @@ public class DB_Conexion extends SQLiteOpenHelper {
         db.execSQL(sqlZona);
         String sqlCalendario="INSERT INTO calendario (fecha, codigo) VALUES \n" +
                 "('2024-01-01', 1),\n" +
-                "('2024-01-02', 0),\n" +
-                "('2024-01-03', 0),\n" +
-                "('2024-01-04', 0),\n" +
-                "('2024-01-05', 0),\n" +
+                "('2024-01-02', 1),\n" +
+                "('2024-01-03', 1),\n" +
+                "('2024-01-04', 1),\n" +
+                "('2024-01-05', 1),\n" +
                 "('2024-01-06', 1),\n" +
                 "('2024-01-07', 1),\n" +
                 "('2024-01-08', 0),\n" +
@@ -243,18 +297,18 @@ public class DB_Conexion extends SQLiteOpenHelper {
                 "('2024-03-19', 0),\n" +
                 "('2024-03-20', 0),\n" +
                 "('2024-03-21', 0),\n" +
-                "('2024-03-22', 0),\n" +
+                "('2024-03-22', 1),\n" +
                 "('2024-03-23', 1),\n" +
                 "('2024-03-24', 1),\n" +
-                "('2024-03-25', 0),\n" +
-                "('2024-03-26', 0),\n" +
-                "('2024-03-27', 0),\n" +
+                "('2024-03-25', 1),\n" +
+                "('2024-03-26', 1),\n" +
+                "('2024-03-27', 1),\n" +
                 "('2024-03-28', 1),\n" +
-                "('2024-03-29', 0),\n" +
+                "('2024-03-29', 1),\n" +
                 "('2024-03-30', 1),\n" +
                 "('2024-03-31', 1),\n" +
                 "--- abril\n" +
-                "('2024-04-01', 0),\n" +
+                "('2024-04-01', 1),\n" +
                 "('2024-04-02', 0),\n" +
                 "('2024-04-03', 0),\n" +
                 "('2024-04-04', 0),\n" +
@@ -287,7 +341,7 @@ public class DB_Conexion extends SQLiteOpenHelper {
                 "--- mayo\n" +
                 "('2024-05-01', 1),\n" +
                 "('2024-05-02', 1),\n" +
-                "('2024-05-03', 0),\n" +
+                "('2024-05-03', 1),\n" +
                 "('2024-05-04', 1),\n" +
                 "('2024-05-05', 1),\n" +
                 "('2024-05-06', 0),\n" +
